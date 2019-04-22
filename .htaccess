@@ -1,0 +1,36 @@
+RewriteEngine On
+
+#Bloqueia listagem de diretorio
+Options -Indexes
+
+#FORCE HTTPS
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#HABILITA CACHE PARA ALGUMAS EXTENCOES
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|json|ttf|woff|woff2)$">
+	Header set Cache-Control "max-age=2592000, public"
+	Header set Access-Control-Allow-Origin "*"
+</filesMatch>
+
+#DESABILITA CACHE PARA ALGUMAS EXTENCOES
+<filesMatch ".(php|cache|ini)$">
+	Header set Access-Control-Allow-Origin "*"
+</filesMatch>
+
+#BLOQUEIA ACESSO PARA ALGUNS ARQUIVOS
+<Files "parametros.ini">
+	Order Allow,Deny
+	Deny from all
+</Files>
+
+#PROGRAMA URL AMIGAVEIS
+<IfModule mod_rewrite.c>
+
+#======================= PAGINAS DEFAULT =======================
+#HOME
+	RewriteRule ^b2c/home/?$ /workspace_sistemas_php/wellness-club/view/template/default.php [QSA]	
+	RewriteRule ^b2c/index/?$ /workspace_sistemas_php/wellness-club/view/b2c/index.php [QSA]
+	RewriteRule ^b2c/primeiroacesso/?$ /workspace_sistemas_php/wellness-club/view/b2c/primeiro_acesso.php [QSA]
+	RewriteRule ^b2c/videoteca/?$ /workspace_sistemas_php/wellness-club/view/b2c/videoteca.php [QSA]
+</IfModule>
