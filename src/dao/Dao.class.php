@@ -111,7 +111,7 @@ class Dao
 
             $cont = 1;
             foreach ($arrayDados as $valor) {
-                if (preg_match("/^[\-+]?[0-9]*\.?[0-9]*\,?[0-9]+$/", $valor) > 0) {
+                if (preg_match("/^[\-+]?[0-9]*\.?[0-9]*\.?[0-9]*\,?[0-9]+$/", $valor) > 0) {
                     $valor = NumberUtil::parseSQL($valor);
                 } else if (DateUtil::isDate($valor)) {
                     $valor = DateUtil::parseSQL($valor);
@@ -140,7 +140,7 @@ class Dao
 
             $cont = 1;
             foreach ($arrayDados as $valor) {
-                if (preg_match("/^[\-+]?[0-9]*\.?[0-9]*\,?[0-9]+$/", $valor) > 0) {
+                if (preg_match("/^[\-+]?[0-9]*\.?[0-9]*\.?[0-9]*\,?[0-9]+$/", $valor) > 0) {
                     $valor = NumberUtil::parseSQL($valor);
                 } else if (DateUtil::isDate($valor)) {
                     $valor = DateUtil::parseSQL($valor);
