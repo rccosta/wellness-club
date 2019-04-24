@@ -1,0 +1,12 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"Wellnessclub\\Wellness-club\\" : "src"
+		}
+	},
+	"name" : "wellnessclub/wellness-club",
+	"require" : {
+		"php" : ">=7.2",
+		"vimeo/vimeo-api" : "~3.0"
+	}
+}
