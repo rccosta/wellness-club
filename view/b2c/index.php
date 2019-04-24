@@ -10,7 +10,7 @@ require_once '../../Config.php';
 				<div class="col-lg-12 col-md-12">
 					<div class="card">
 						<div class="card-header borderless">
-							<h5>Precisamos saber mais sobre você :D</h5>
+							<h5>Precisamos saber mais sobre você :D teste</h5>
 						</div>
 						<div class="card-block">
 							<p>Pelo que vi aqui é seu primeiro acesso, ficamos muito felizmes por ter nos escolhido.</p>
