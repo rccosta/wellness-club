@@ -1,0 +1,16 @@
+{
+  "name": "wellness-club",
+  "version": "1.0.0",
+  "description": "Criando a ferramenta do welnnes-club e a dashboard do projeto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Costa",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
