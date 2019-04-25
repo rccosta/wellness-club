@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/***********************************************************************************
+* Este arquivo tem como principal objetivo configurar cores, fonts  e formatação de títulos e paragrafos *
+************************************************************************************/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 10px; }
+  p strong {
+    font-weight: 700; }
+
+a.btn-padrao.cor-1 {
+  background: #00b894;
+  border: 1px solid #00b894;
+  color: white;
+  transition: ease-in-out 0.2s; }
+  a.btn-padrao.cor-1:hover {
+    text-decoration: none;
+    background: white;
+    border: 1px solid #00b894;
+    color: #00b894; }
+
+hr {
+  background-image: linear-gradient(#55efc4, #fa983a 70%);
+  border: none;
+  height: 1px;
+  width: 100%; }
+
+header {
+  padding: 20px 0;
+  width: 100%; }
+
+a.btn-padrao {
+  display: inline-block;
+  padding: 10px 20px; }
+
+section.padrao {
+  padding: 40px 0;
+  width: 100%; }
+
+section.padrao {
+  background: white; }
+  section.padrao.captar h1 {
+    color: #00b894; }

@@ -1,0 +1,20 @@
+@import 'padroes';
+
+header{
+    @extend %paddingHeaderFooter;   
+}
+
+//Seções
+section.padrao{
+    @extend %paddingPadrao;
+    background: $branco;
+
+    //formatação
+    &.captar{
+        h1{
+            color:$cor-2;
+        }
+    }
+}
+
+

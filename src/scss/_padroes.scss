@@ -1,0 +1,92 @@
+/***********************************************************************************
+* Este arquivo tem como principal objetivo configurar cores, fonts  e formatação de títulos e paragrafos *
+************************************************************************************/
+//CORES
+// Cores padrões
+$cor-1:rgba(85, 239, 196,1.0) ; //Cor principal
+$cor-2:rgba(0, 184, 148,1.0) ; //Cor monogromatica principal
+$cor-3:rgba(250, 152, 58,1.0) ; //Cor complementar da principal
+// Tonalidades de cinza
+$cor-4:rgba(241, 242, 246,1.0); //cinza para backgrounds
+$cor-5:rgba(99, 110, 114,1.0) ; //cinza para textos principal
+$cor-6:rgba(45, 52, 54,1.0) ; //cinza para textos alternativo
+//Cores de auto contraste
+$branco:rgba(255, 255, 255,1.0); // Branco
+$preto:rgba(0, 0, 0,1.0); // Preto
+//Gradientes
+$gradiente-1:linear-gradient($cor-1, $cor-2 70% );
+$gradiente-2:linear-gradient($cor-1, $cor-3 70% );
+
+//Transições
+$transicao: ease-in-out .2s;
+
+//FONTES
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700');
+$textos:'Open Sans', sans-serif;
+$títulos:'Roboto', sans-serif;
+
+//TITULOS
+h1, h2, h3, h4, h5, h6{
+    font-family: $títulos;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;     
+}
+//PARAGRAFO
+p{
+    font-family: $textos;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    strong{
+        font-weight: 700;
+    }
+}
+//Links padrão
+a{
+    
+    //botões
+    &.btn-padrao{
+       @extend %botoes;
+       
+        &.cor-1{
+            background: $cor-2;
+            border: 1px solid $cor-2;
+            color: $branco;  
+            transition: $transicao;
+            &:hover{
+                text-decoration: none;
+                background: $branco;
+                border: 1px solid $cor-2;
+                color: $cor-2;  
+          }          
+        }
+
+        
+    }
+
+}
+
+//Linha hr
+hr{
+    background-image: $gradiente-2;
+    border: none;
+    height: 1px;
+    width: 100%;
+}
+
+//Placeholders
+%paddingHeaderFooter{
+    padding: 20px 0;
+    width: 100%;
+}
+
+%botoes{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+%paddingPadrao{
+    padding: 40px 0;
+    width: 100%;
+}

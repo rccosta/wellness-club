@@ -58,8 +58,9 @@ require_once '../../Config.php';
 	rel="stylesheet"
 	type="text/css"
 	href="<?php echo _URL_SISTEMA; ?>view/assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo _URL_SISTEMA; ?>view/assets/css/widget.css">
+
 	<link rel="stylesheet" type="text/css" href="<?php echo _URL_SISTEMA; ?>view/assets/css/pages.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo _URL_SISTEMA; ?>view/assets/css/master.css">
 	<!-- sweet alert framework -->
     <link rel="stylesheet" type="text/css" href="<?php echo _URL_SISTEMA; ?>view/vendor/sweetalert2/sweetalert2.css">
 	
