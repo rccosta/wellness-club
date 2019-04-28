@@ -36,4 +36,5 @@ Options -Indexes
 
 	#======================= FERRAMENTA CAPTAÇÃO =======================
 	RewriteRule ^captar/index/?$ /websites/wellnessclub/view/captar/index.php [QSA]
+	RewriteRule ^captar/formulario/?$ /websites/wellnessclub/view/captar/formulario.php [QSA]
 </IfModule>

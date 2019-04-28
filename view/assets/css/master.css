@@ -50,3 +50,23 @@ section.padrao {
   background: white; }
   section.padrao.captar h1 {
     color: #00b894; }
+  section.padrao.captar form {
+    padding: 20px; }
+    section.padrao.captar form fieldset {
+      border: 1px solid #f1f2f6; }
+      section.padrao.captar form fieldset legend {
+        text-align: center;
+        margin-top: 20px; }
+
+footer ul.socialmedia {
+  float: right; }
+  footer ul.socialmedia li {
+    float: left;
+    list-style: none;
+    padding: 0 3px; }
+    footer ul.socialmedia li a {
+      padding: 4px 6px;
+      background: #f1f2f6;
+      color: #00b894; }
+      footer ul.socialmedia li a:hover {
+        color: #636e72; }
