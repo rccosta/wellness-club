@@ -46,6 +46,9 @@ section.padrao {
   padding: 40px 0;
   width: 100%; }
 
+header.pcoded {
+  background: #2d3436 !important; }
+
 section.padrao {
   background: white; }
   section.padrao.captar h1 {
