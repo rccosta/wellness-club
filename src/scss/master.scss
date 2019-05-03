@@ -1,7 +1,10 @@
 @import 'padroes';
 
 header{
-    @extend %paddingHeaderFooter;   
+    @extend %paddingHeaderFooter;
+    &.pcoded{
+        background:$cor-6 !important;
+    }   
 }
 
 //Seções
