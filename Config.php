@@ -76,15 +76,15 @@ spl_autoload_register('application_autoloader');
 require_once _ABS_PATH . 'vendor/autoload.php';
 
 // TESTES
-$_SESSION['INDEX_USUARIO'] = NULL;
-if (! isset($_SESSION['INDEX_USUARIO'])) {
-    $pdo = Database::getInstance();
-    $dao = Dao::getInstance($pdo, null);
-    $_SESSION['INDEX_USUARIO'] = $dao->getSQLGeneric('SELECT * FROM usuario WHERE cod = 1', NULL, FALSE);
-    $_SESSION['INDEX_USUARIO_META'] = $dao->getSQLGeneric('SELECT * FROM usuario_meta WHERE cUsuario = 1', NULL, FALSE);
-    $pdo = NULL;
-    $dao = NULL;
-}
+// $_SESSION['INDEX_USUARIO'] = NULL;
+// if (! isset($_SESSION['INDEX_USUARIO'])) {
+//     $pdo = Database::getInstance();
+//     $dao = Dao::getInstance($pdo, null);
+//     $_SESSION['INDEX_USUARIO'] = $dao->getSQLGeneric('SELECT * FROM usuario WHERE cod = 1', NULL, FALSE);
+//     $_SESSION['INDEX_USUARIO_META'] = $dao->getSQLGeneric('SELECT * FROM usuario_meta WHERE cUsuario = 1', NULL, FALSE);
+//     $pdo = NULL;
+//     $dao = NULL;
+// }
 
 // Verifica segurança da pagina
 if (isset($_SERVER['REQUEST_METHOD'])) {

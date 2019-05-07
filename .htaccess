@@ -28,9 +28,13 @@ Options -Indexes
 <IfModule mod_rewrite.c>
 
 #======================= PAGINAS DEFAULT =======================
-#HOME
-	RewriteRule ^b2c/home/?$ /workspace_sistemas_php/wellness-club/view/template/default.php [QSA]	
-	RewriteRule ^b2c/index/?$ /workspace_sistemas_php/wellness-club/view/b2c/index.php [QSA]
-	RewriteRule ^b2c/primeiroacesso/?$ /workspace_sistemas_php/wellness-club/view/b2c/primeiro_acesso.php [QSA]
-	RewriteRule ^b2c/videoteca/?$ /workspace_sistemas_php/wellness-club/view/b2c/videoteca.php [QSA]
+	#RewriteRule ^b2c/home/?$ /workspace_sistemas_php/wellness-club/view/template/default.php [QSA]	
+	#RewriteRule ^b2c/index/?$ /workspace_sistemas_php/wellness-club/view/b2c/index.php [QSA]
+	#RewriteRule ^b2c/primeiroacesso/?$ /workspace_sistemas_php/wellness-club/view/b2c/primeiro_acesso.php [QSA]
+	#RewriteRule ^b2c/videoteca/?$ /workspace_sistemas_php/wellness-club/view/b2c/videoteca.php [QSA]
+	
+	RewriteRule ^index/?$ /workspace_sistemas_php/wellness-club/view/build/index.php [QSA]	
+	RewriteRule ^login/?$ /workspace_sistemas_php/wellness-club/view/build/login.php [QSA]	
+	RewriteRule ^primeiro_acesso/?$ /workspace_sistemas_php/wellness-club/view/build/primeiro_acesso.php [QSA]
+	RewriteRule ^configuracao/?$ /workspace_sistemas_php/wellness-club/view/build/configuracao.php [QSA]
 </IfModule>
